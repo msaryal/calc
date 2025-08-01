@@ -45,22 +45,26 @@
                 <div class="card p-3 mb-3" id="add">
                     <h2 class="card-title">Добавить ингредиент</h2>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <input type="text" class="flex-grow-1 form-control mb-3" id="ingredient_name" placeholder="Название ингредиента">
                         </div>
-                        <div class="col-3">
-                            <input type="number" class="form-control mb-3" id="ingredient_quantity" placeholder="Количество">
-                        </div>
-                        <div class="col-3">
-                            <select class="form-select mb-3" id="ingredient_measure">
-                                <option value="гр.">гр.</option>
-                                <option value="кг.">кг.</option>
-                                <option value="мл.">мл.</option>
-                                <option value="л.">л.</option>
-                                <option value="ч.л.">ч.л.</option>
-                                <option value="ст.л.">ст.л.</option>
-                                <option value="шт.">шт.</option>
-                            </select>
+                        <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="number" class="form-control mb-3" id="ingredient_quantity" placeholder="Количество">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-select mb-3" id="ingredient_measure">
+                                        <option value="гр.">гр.</option>
+                                        <option value="кг.">кг.</option>
+                                        <option value="мл.">мл.</option>
+                                        <option value="л.">л.</option>
+                                        <option value="ч.л.">ч.л.</option>
+                                        <option value="ст.л.">ст.л.</option>
+                                        <option value="шт.">шт.</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary" onclick="addIngredient()">Добавить</button>
@@ -70,17 +74,21 @@
                 <div class="card p-3 mb-3" id="calculate">
                     <h2 class="card-title">Изменить рецепт</h2>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <select class="form-select" id="calculate_ratio_type">
                                 <option value="down">Уменьшить во сколько раз</option>
                                 <option value="up">Увеличить во сколько раз</option>
                             </select>
                         </div>
-                        <div class="col-3">
-                            <input type="number" class="form-control" id="calculate_ratio" value="4">
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary w-100" onclick="calculateRecipe()">Рассчитать</button>
+                        <div class="col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="number" class="form-control" id="calculate_ratio" value="4">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <button type="button" class="btn btn-primary w-100" onclick="calculateRecipe()">Рассчитать</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
